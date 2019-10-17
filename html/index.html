@@ -1,95 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      
+
+<head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="apple-touch-icon" sizes="57x57" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="../8fb6db8da4c4b08488d82720e906281c.ico/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../8fb6db8da4c4b08488d82720e906281c.ico/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="../8fb6db8da4c4b08488d82720e906281c.ico/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../8fb6db8da4c4b08488d82720e906281c.ico/favicon-16x16.png">
-<link rel="manifest" href="../8fb6db8da4c4b08488d82720e906281c.ico/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="60x60" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../8fb6db8da4c4b08488d82720e906281c.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../8fb6db8da4c4b08488d82720e906281c.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../8fb6db8da4c4b08488d82720e906281c.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../8fb6db8da4c4b08488d82720e906281c.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../8fb6db8da4c4b08488d82720e906281c.ico/favicon-16x16.png">
+    <link rel="manifest" href="../8fb6db8da4c4b08488d82720e906281c.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
 
 
 
     <title>Dark Sky</title>
-  </head>
-  <body>
-<!-- NAVBAR-->
+</head>
+
+<body>
+    <!-- NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Weather Wizard!!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="https://darksky.net/dev">Powered by DarkSky</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.mapquest.com">MapQuest Geocoding</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" id="searchBar" placeholder="Address-City-Zipcode" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" id="submit">Get Weather</button>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://darksky.net/dev">Powered by DarkSky</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.mapquest.com">MapQuest Geocoding</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchBar" placeholder="Address-City-Zipcode" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type ="button" id="submitForm">Get Weather</button>
             </form>
         </div>
-      </nav>
+    </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+<!-- Weather Card Container -->
+<div class="container" id="">
+        <div class="row">
+        </div>
+    </div>
+            <!-- Weather card template -->
+            <div id="template" style="display: none" class = "container">
+                <div class="col-xs-12 col-lg-4">
+                <div class="weatherCard">
+                    <!-- Button to remove the card -->
+                    <button type="buttom" id="remove">X</button>
+                    <!-- location-->
+                    <h1>@@city@@</h1> 
+                    <!-- Current Temp -->
+                    <h1>@@currentTemp@@&#8457</h1> <!-- &#8457 makes a degree symnbol -->
+                    <!-- List of weather info -->
+                    <ul class="list-group list-group-flush">
+                         <li class="list-group-item">Location: Glasgow</li>
+                         <li class="list-group-item">Current Conditions: @@conditions@@</li>
+                         <li class="list-group-item">High Temp: @@highTemp@@&#8457</li>
+                         <li class="list-group-item">Low Temp: @@lowTemp@@&#8457</li>
+                         <li class="list-group-item">Chance of Percipitation @@precipChance@@%</li>
+                     </ul>
+                </div>
+            </div>
+        </div>
 
 
     <!-- Popper.js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!-- JQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <!-- Bootstrap -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="../js/apiKeys.js"></script>
     <script src="../js/weather.js"></script>
-  </body>
+</body>
+
 </html>

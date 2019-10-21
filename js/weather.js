@@ -36,6 +36,7 @@ function getWeatherInfo(latitude, longitude, city, state) {
       let highTemp = currentDayInfo.temperatureHigh;
       let lowTemp = currentDayInfo.temperatureLow;
       let precipChance = currentDayInfo.precipProbability;
+      let weatherImg = data.currently.icon;
 
       templateHTML = templateHTML.replace("@@city@@", city);
       templateHTML = templateHTML.replace("@@currentTemp@@", Math.round(temperature));
@@ -44,7 +45,28 @@ function getWeatherInfo(latitude, longitude, city, state) {
 
       templateHTML = templateHTML.replace("@@highTemp@@", Math.round(highTemp));
       templateHTML = templateHTML.replace("@@lowTemp@@", Math.round(lowTemp));
-      templateHTML = templateHTML.replace("@@precipChance@@", precipChance * 100);
+      templateHTML = templateHTML.replace("@@precipChance@@", Math.round(precipChance * 100));
+      templateHTML = templateHTML.replace("@@imageURL@@", "../img/" + weatherImg + ".jpg")
+
+      for (var i = 0; i < 5; i++) {
+        if (i >= 0) {
+          let date = new Date();
+          date.setDate(date.getDate() + i);
+          
+          let month = date.getMonth() + 1;
+            
+          let day = date.getDate();
+          
+          templateHTML = templateHTML.replace("@@date" + i + "@@", month + "/" + day);
+        }
+        
+        let currentDayWeatherData = data.daily.data[i];
+        templateHTML = templateHTML.replace("@@max" + i + "@@", Math.round(currentDayWeatherData.temperatureMax));
+
+        templateHTML = templateHTML.replace("@@low" + i + "@@", Math.round(currentDayWeatherData.temperatureLow));
+
+        templateHTML = templateHTML.replace("@@precip" + i + "@@", Math.round(currentDayWeatherData.precipProbability * 100));
+      }
 
 
       
